@@ -1,8 +1,7 @@
 word_chainer
 ============
 
+word chain- a list of words in which each successive word has changed only a single letter from the previous word.
+
 Word Chainer Program
-Creates a word chain from the start word to the end word.  Program starts by creating a word chain tree.  The tree finds
-adjacent words to the current node and adds them as children to the node if they are not duplicate words.  After the end
-word has been found, the program then iterates upward through the tree from the end word to the start word to find the
-word chain.
+Word Chainer starts by prompting a user for a starting word and an ending word.  From the starting word, the program creates a tree branching out through each adjacent child until the ending word is found.  All words that have been visited are held within an array so that no infinite loops are created within the tree.  If a path is found, the program prints out the shortest path that is found to the word.
