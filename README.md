@@ -5,4 +5,6 @@ word chain- a list of words in which each successive word has changed only a sin
 
 Word Chainer Program
 
-Word Chainer starts by prompting a user for a starting word and an ending word.  From the starting word, the program creates a tree branching out through each adjacent child until the ending word is found.  All words that have been visited are held within an array so that no infinite loops are created within the tree.  If a path is found, the program prints out the shortest path that is found to the word by using a breadth-first search.
+Word Chainer creates a tree of many word chains from the root (initial word) until the target word is found, then finds the shortest path from the root to the target word using a breadth-first search.
+
+TreeNode is an implementation of a tree data structure that can have zero to many children that can be searched using predefined methods for depth-first and bread-first algorithm.
